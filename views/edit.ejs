@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
-        <title>Criando Forma</title>
+        <title>Mudanças quando Necessario</title>
     </head>
+
     <body>
-        <h2>REGISTRAR</h2>
-        <form action="/mostrar" method="post">
-            <input type="text" placeholder="Nome" name="name">
-            <input type="text" placeholder="Sobrenome" name="surnome">
-            <button type="submit">Enviar</button>
-
-
-        </form>
-
+        <h2>Editar Registro</h2>
+        <% crud.forEach(function(details) { %>
+            <form action="/edit/<%= details._id %>" method="POST">
+                <input type="text" value="<%= details.name %>" name="name">
+                <input type="text" value="<%= details.surname %>" name="surname">
+                <br/>
+                <button>
+                    <a href="/show">Todos</a>
+                </button>
+                <button type="submit">Editar</button>
+            </form>
+        <% }) %>
     </body>
-    
+
 </html>
