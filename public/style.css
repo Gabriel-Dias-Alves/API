@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b5d2f8;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    width:auto;
+    border-radius: 10px;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+tr{
+    background-color: #3e506b;
+    padding: 20px;
+    width:auto;
+    border-radius: 10px;
+}
+td{
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+
+}

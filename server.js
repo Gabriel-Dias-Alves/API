@@ -11,6 +11,7 @@ const client = new MongoClient(url)
 let collection
 
 api.set("view engine", "ejs")
+api.use(express.urlencoded({extended: true}))
 api.get("index.ejs", (req,res)=>{
     res.render("index.ejs")
 })
